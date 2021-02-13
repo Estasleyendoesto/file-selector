@@ -1,5 +1,15 @@
-import {saludar} from "./js/components.js";
+import {fileSelector} from "./js/fileSelector.js";
 import "./styles.css";
 
-const nombre = "Robert";
-saludar(nombre);
+function printboxes(container, elements)
+{
+    for(let e = 0; e < elements; e++)
+    {
+        let div = document.createElement("div");
+        div.innerHTML = e;
+        container.append(div);
+    }
+}
+
+printboxes(grid, 24);
+fileSelector(grid);
