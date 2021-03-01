@@ -1,4 +1,4 @@
-import {fileSelector} from "./js/fileSelector.js";
+import { fileSelector } from "./js/fileSelector.js";
 import "./style.css";
 
 function printboxes(container, elements)
