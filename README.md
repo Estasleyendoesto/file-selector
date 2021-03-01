@@ -1,5 +1,5 @@
 # File selector
+
 Seleccionador de archivos mediante arrastrar y soltar usando Javascript.
-> Fecha de creaciÃ³n: `13-02-2021`
 
-
+> Fecha de creación: `13-02-2021`

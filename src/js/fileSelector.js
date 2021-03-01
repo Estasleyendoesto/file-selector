@@ -2,8 +2,6 @@ import "../css/fileSelector.css";
 
 export function fileSelector(container)
 {
-    'use strict';
-    
     container.style.userSelect = "none";
 
     let ox, oy;     // Origen x e y
@@ -29,16 +27,8 @@ export function fileSelector(container)
             clearSelection();   // Remove "selected" class of all children
 
             // Select first element and deselect
-            if (navigator.userAgent.indexOf('Chrome/') > 0)
-            {
-                if (event.toElement != container)
-                    event.toElement.classList.toggle("selected");
-            }
-            if (navigator.userAgent.indexOf('Firefox/') > 0)
-            {
-                if (event.originalTarget != container)
-                    event.originalTarget.classList.toggle("selected");
-            }
+            if (event.target != container)
+                event.target.classList.toggle("selected");
 
             this.prepend(selector);
             document.onmousemove = resize;
